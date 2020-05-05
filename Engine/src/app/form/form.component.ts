@@ -12,10 +12,8 @@ export class FormComponent implements OnInit {
 
   @Input() data;
 
-  elementsData;
   ngOnInit(): void {
     console.log(this.data);
-    this.elementsData = this.data.elements
   }
 
 }

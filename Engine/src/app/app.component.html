@@ -1,3 +1,6 @@
-<!-- <ng-template *ngIf='dataSource.type == "FORM"'> -->
+<div *ngIf='dataSource.type == "FORM"'>
   <app-form [data]='dataSource'></app-form>
-<!-- </ng-template> -->
+</div>
+<div *ngIf='dataSource.type == "TABLE"'>
+  <app-form [data]='dataSource'></app-form>
+</div>
