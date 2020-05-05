@@ -9,6 +9,11 @@ export class AppComponent {
   title = 'Engine';
   dataSource = {
     type: 'FORM',
-    placeholder: "Test"
+    elements: [
+      { type: 'input', placeholder: "Test" },
+      { type: 'input', placeholder: "Kanav" },
+      { type: 'input', placeholder: "Lakshit" },
+  ]
+    
   }
 }

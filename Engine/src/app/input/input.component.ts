@@ -10,7 +10,6 @@ export class InputComponent implements OnInit {
 
   constructor() { }
   @Input() data;
-  @Input() dataSource;
   ngOnInit() {
     console.log(this.data);
   }

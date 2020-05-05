@@ -1,4 +1,7 @@
 <!-- <form [formGroup]=""> -->
-<form>
-    <app-input></app-input>
-</form>
+<!-- <form> -->
+    <div *ngFor='let ele of elementsData'>
+        <app-input [data]='ele'></app-input>
+    </div>
+<!-- </form> -->
+
