@@ -16,12 +16,20 @@ export class AppComponent {
         { type: 'input', placeholder: "Lakshit" },
       ]
     },
+    // {
+    //   type: 'TABLE',
+    //   elements: [
+    //     { type: 'input', placeholder: "Test" },
+    //     { type: 'input', placeholder: "Kanav" },
+    //     { type: 'input', placeholder: "Lakshit" },
+    //   ]
+    // },
     {
-      type: 'TABLE',
+      type: 'BUTTON',
       elements: [
-        { type: 'input', placeholder: "Test" },
-        { type: 'input', placeholder: "Kanav" },
-        { type: 'input', placeholder: "Lakshit" },
+        { type: 'button', buttontext: "Test",buttoncolor:"Primary" },
+        { type: 'button', buttontext: "Kanav",buttoncolor:"accent" },
+        { type: 'button', buttontext: "Lakshit",buttoncolor:"warn" },
       ]
     }
   ]
