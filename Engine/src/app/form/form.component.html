@@ -1,0 +1,20 @@
+<div *ngFor='let ele of data.properties.elements'>
+    <div [ngSwitch]="ele.type">
+        <div *ngSwitchCase="'input'">
+            <app-input [data]='ele.properties'></app-input>
+        </div>
+        <div *ngSwitchCase="'button'">
+            <app-button [data]='ele.properties'></app-button>
+        </div>
+        <div *ngSwitchCase="'textarea'">
+            <app-textarea [data]='ele.properties'></app-textarea>
+        </div>
+        <div *ngSwitchCase="'radio'">
+            <app-radiobutton [data]='ele.properties'></app-radiobutton>
+        </div>
+        <div *ngSwitchCase="'checkbox'">
+            <app-checkbox [data]='ele.properties'></app-checkbox>
+        </div>
+        <!-- <div *ngSwitchCase="'SELECT'"></div> -->
+    </div>
+</div>

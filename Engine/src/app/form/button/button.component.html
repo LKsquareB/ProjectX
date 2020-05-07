@@ -1,0 +1,17 @@
+<div *ngIf='data.isVisible'>
+    <div *ngIf='data.type=="raised"'>
+        <button mat-raised-button color="{{data.color}}" [disabled]='!data.isEnable'>
+            {{data.text}}
+        </button>
+    </div>
+    <div *ngIf='data.type=="stroked"'>
+        <button mat-stroked-button color="{{data.color}}" [disabled]='!data.isEnable'>
+            {{data.text}}
+        </button>
+    </div>
+    <div *ngIf='data.type=="flat"'>
+        <button mat-flat-button color="{{data.color}}" [disabled]='!data.isEnable'>
+            {{data.text}}
+        </button>
+    </div>
+</div>

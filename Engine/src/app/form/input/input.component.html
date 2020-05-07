@@ -1,0 +1,5 @@
+<div *ngIf="data.isVisible">
+  <mat-form-field>
+    <input type="{{data.type}}" matInput placeholder="{{data.placeholder}}" [disabled]='!data.isEnable'>
+  </mat-form-field>
+</div>

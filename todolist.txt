@@ -1,0 +1,25 @@
+______________
+Components   |
+--------------
+Till 10 May
+
+Table Component
+Form Component
+______________
+Till 17 May
+
+Header and Footer
+Card Component
+Navigation / Menu Component
+Stepper
+______________
+Till 23 May
+
+Dialog Box and snackbar
+Page Implementation
+Sidenav
+Math.js --> For logic
+_______________
+Till 30 May
+
+Designer for this engine with Drag and Drop
