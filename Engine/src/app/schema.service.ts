@@ -4,10 +4,10 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class SchemaService {
-  constructor() {}
-  dataSource;
-  schema() {
-    this.dataSource = [
+  constructor() { }
+
+  dataSchema() {
+    let dataSource = [
       {
         type: 'FORM',
         properties: {
@@ -18,41 +18,41 @@ export class SchemaService {
           },
           elements: [
             {
-            type: 'input',
-            properties:{
-              type:'text',
-              placeholder:'name',
-              value:'lk2b',
-              isVisible: true,
-              isEnable: true,
-            }
-          },
+              type: 'input',
+              properties: {
+                type: 'text',
+                placeholder: 'name',
+                value: 'lk2b',
+                isVisible: true,
+                isEnable: true,
+              }
+            },
             {
               type: 'button',
-              properties:{
-                type:'raised',
-                text:'submit',
-                color:'primary',
+              properties: {
+                type: 'raised',
+                text: 'submit',
+                color: 'primary',
                 isVisible: true,
                 isEnable: true,
               }
             },
             {
               type: 'textarea',
-            properties:{
-              type:'text',
-              placeholder:'name',
-              value:'lk2b',
-              isVisible: true,
-              isEnable: true,
-            }
+              properties: {
+                type: 'text',
+                placeholder: 'name',
+                value: 'lk2b',
+                isVisible: true,
+                isEnable: true,
+              }
             },
             {
               type: 'select',
-              properties:{
-                type:'raised',
-                text:'submit',
-                color:'primary',
+              properties: {
+                type: 'raised',
+                text: 'submit',
+                color: 'primary',
                 isVisible: true,
                 isEnable: true,
               }
@@ -61,5 +61,6 @@ export class SchemaService {
         },
       },
     ];
+    return dataSource
   }
 }

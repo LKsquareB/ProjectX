@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SchemaService } from './schema.service';
 
 @Component({
   selector: 'app-root',
@@ -6,31 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  constructor(public schemaService: SchemaService) {}
   title = 'Engine';
-  dataSource = [
-    {
-      type: 'FORM',
-      elements: [
-        { type: 'input', placeholder: "Test" },
-        { type: 'input', placeholder: "Kanav" },
-        { type: 'input', placeholder: "Lakshit" },
-      ]
-    },
-    // {
-    //   type: 'TABLE',
-    //   elements: [
-    //     { type: 'input', placeholder: "Test" },
-    //     { type: 'input', placeholder: "Kanav" },
-    //     { type: 'input', placeholder: "Lakshit" },
-    //   ]
-    // },
-    {
-      type: 'BUTTON',
-      elements: [
-        { type: 'button', buttontext: "Test",buttoncolor:"Primary" },
-        { type: 'button', buttontext: "Kanav",buttoncolor:"accent" },
-        { type: 'button', buttontext: "Lakshit",buttoncolor:"warn" },
-      ]
-    }
-  ]
+  dataSource = this.schemaService.dataSchema();
 }
