@@ -24,7 +24,7 @@ import { DatepickerComponent } from './datepicker/datepicker.component';
     CheckboxComponent,
     RadiobuttonComponent,
     SelectComponent,
-    DatepickerComponent,
+    DatepickerComponent
   ],
   imports: [
     CommonModule,
@@ -34,6 +34,15 @@ import { DatepickerComponent } from './datepicker/datepicker.component';
     MatCheckboxModule,
     MatRadioModule,
     MatSelectModule
+  ],
+  exports: [
+    FormComponent,
+    ButtonComponent,
+    InputComponent,
+    CheckboxComponent,
+    RadiobuttonComponent,
+    SelectComponent,
+    DatepickerComponent
   ]
 })
 export class FormModule { }
