@@ -1,5 +1,7 @@
 <mat-radio-group >
-    <mat-radio-button value="{{radiobutton.value}}" color="radiobutton.color">
-        {{radiobutton.text}}
-    </mat-radio-button>
+    <div *ngFor='let ele of elements'>
+        <mat-radio-button value="{{ele.value}}" color="ele.color">
+            {{radiobutton.text}}
+        </mat-radio-button>
+    </div>
 </mat-radio-group>

@@ -56,7 +56,36 @@ export class SchemaService {
                 isVisible: true,
                 isEnable: true,
               }
-            }
+            },
+            {
+              type: 'radio',
+              elements:[
+                {
+                  value:'Name',
+                  text: 'Lakshit',
+                  color: 'primary',
+                  isVisible: true,
+                  isEnable: true,
+                },
+                {
+                  value:'Name',
+                  text: 'Lakshit',
+                  color: 'primary',
+                  isVisible: true,
+                  isEnable: true,
+                },
+              ]
+            },
+            {
+              type: 'checkbox',
+              properties: {
+                text: 'submit',
+                color: 'primary',
+                isVisible: true,
+                isEnable: true,
+              }
+            },
+
           ],
         },
       },
