@@ -18,6 +18,7 @@ import { RadiobuttonComponent } from './radiobutton/radiobutton.component';
 import { SelectComponent } from './select/select.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { MatNativeDateModule } from '@angular/material/core';
+import { TextareaComponent } from './textarea/textarea.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     CheckboxComponent,
     RadiobuttonComponent,
     SelectComponent,
-    DatepickerComponent
+    DatepickerComponent,
+    TextareaComponent
   ],
   imports: [
     CommonModule,
@@ -48,7 +50,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     CheckboxComponent,
     RadiobuttonComponent,
     SelectComponent,
-    DatepickerComponent
+    DatepickerComponent,
+    TextareaComponent
   ]
 })
 export class FormModule { }

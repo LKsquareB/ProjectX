@@ -1,3 +1,5 @@
-<mat-checkbox color="{{checkbox.color}}">
-    {{checkbox.text}}
-</mat-checkbox>
+<div *ngIf="data.isVisible">
+    <mat-checkbox color="{{data.color}}">
+        {{data.text}}
+    </mat-checkbox>
+</div>

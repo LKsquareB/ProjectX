@@ -21,7 +21,7 @@ export class SchemaService {
               type: 'input',
               properties: {
                 type: 'text',
-                placeholder: 'name',
+                placeholder: 'Name',
                 value: 'lk2b',
                 isVisible: true,
                 isEnable: true,
@@ -40,8 +40,7 @@ export class SchemaService {
             {
               type: 'textarea',
               properties: {
-                type: 'text',
-                placeholder: 'name',
+                placeholder: 'Address',
                 value: 'lk2b',
                 isVisible: true,
                 isEnable: true,
@@ -59,22 +58,22 @@ export class SchemaService {
             },
             {
               type: 'radio',
-              elements:[
-                {
-                  value:'Name',
-                  text: 'Lakshit',
-                  color: 'primary',
-                  isVisible: true,
-                  isEnable: true,
-                },
-                {
-                  value:'Name',
-                  text: 'Lakshit',
-                  color: 'primary',
-                  isVisible: true,
-                  isEnable: true,
-                },
-              ]
+              properties: {
+                isVisible: true,
+                isEnable: true,
+                elements: [
+                  {
+                    value: 'Name',
+                    text: 'Kanav',
+                    color: 'primary',
+                  },
+                  {
+                    value: 'Name',
+                    text: 'Lakshit',
+                    color: 'secondary',
+                  },
+                ]
+              },
             },
             {
               type: 'checkbox',

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-radiobutton',
@@ -9,7 +9,10 @@ export class RadiobuttonComponent implements OnInit {
 
   constructor() { }
 
+  @Input() data;
+
   ngOnInit(): void {
+    console.log(this.data);
   }
 
 }
