@@ -10,6 +10,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TableComponent } from './table/table.component';
 import { ButtonComponent } from './form/button/button.component';
 import { FormModule } from './form/form.module';
+import {MatTableModule} from '@angular/material/table';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { FormModule } from './form/form.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FormModule
+    FormModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
