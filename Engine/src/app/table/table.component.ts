@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 
+
 @Component({
   selector: 'app-table',
   templateUrl: './table.component.html',
@@ -13,7 +14,7 @@ export class TableComponent implements OnInit {
   dataSource;
   displayedColumns = [];
 
-  ngOnInit(): void {
+  ngOnInit(){
     console.log(this.data);
     this.dataSource = new MatTableDataSource(this.data.properties.elements);
 

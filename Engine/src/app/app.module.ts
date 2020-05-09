@@ -6,25 +6,20 @@ import { AppComponent } from './app.component';
 // import { FormComponent } from './form/form.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
-import { TableComponent } from './table/table.component';
-import { ButtonComponent } from './form/button/button.component';
 import { FormModule } from './form/form.module';
-import {MatTableModule} from '@angular/material/table';
+import { TableModule } from './table/table.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TableComponent,
-
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FormModule,
-    MatTableModule
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
