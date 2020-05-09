@@ -1,1 +1,15 @@
-<p>table works!</p>
+<div *ngIf="data.isVisible">
+    <mat-table [dataSource]="" class="mat-elevation-z8">
+        <div *ngFor=""> 
+        <ng-container matColumnDef="{{.columnName}}">
+            <mat-header-cell *matHeaderCellDef> {{columnHeader}}</mat-header-cell>
+            <mat-cell *matCellDef="let element">{{element.columnName}}</mat-cell>
+        </ng-container>
+        </div>
+        <div *ngFor="">
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row> 
+        <!-- displayedColumns is the property containg the list of columns to display  -->
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+        </div>
+    </mat-table>
+</div>
