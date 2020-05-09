@@ -23,6 +23,7 @@ export class SchemaService {
                 type: 'text',
                 placeholder: 'Name',
                 value: 'lk2b',
+                width:'50%',
                 isVisible: true,
                 isEnable: true,
               }
@@ -130,7 +131,18 @@ export class SchemaService {
           // ]
         }
 
-      }
+      },
+      {
+        type: 'CARD',
+        properties: {
+          // uiProperty: {
+            width: '50%',
+            isVisible: true,
+            // isEnable: true,
+          // }
+        }
+      },
+
     ];
     return dataSource
   }
