@@ -63,14 +63,14 @@ export class SchemaService {
                 isEnable: true,
                 elements: [
                   {
-                    value: 'Name',
+                    value: 'kanav',
                     text: 'Kanav',
-                    color: 'primary',
+                    // color: 'primary',
                   },
                   {
-                    value: 'Name',
+                    value: 'Lakshit',
                     text: 'Lakshit',
-                    color: 'secondary',
+                    // color: 'secondary',
                   },
                 ]
               },
