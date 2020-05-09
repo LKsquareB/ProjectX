@@ -1,7 +1,7 @@
 <div *ngIf="data.isVisible">
     <mat-radio-group >
         <div *ngFor='let ele of data.elements'>
-            <mat-radio-button value="ele.value" color="ele.color">
+            <mat-radio-button value="ele.value" >
                 {{ele.text}}
             </mat-radio-button>
         </div>
