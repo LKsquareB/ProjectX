@@ -15,6 +15,8 @@
         <div *ngSwitchCase="'checkbox'">
             <app-checkbox [data]='ele.properties'></app-checkbox>
         </div>
-        <!-- <div *ngSwitchCase="'SELECT'"></div> -->
+        <div *ngSwitchCase="'select'">
+            <app-select [data]='ele.properties'></app-select>
+        </div>
     </div>
 </div>

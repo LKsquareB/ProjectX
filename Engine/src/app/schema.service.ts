@@ -48,14 +48,31 @@ export class SchemaService {
             },
             {
               type: 'select',
-              properties: {
-                type: 'raised',
-                text: 'submit',
-                color: 'primary',
-                isVisible: true,
-                isEnable: true,
-              }
-            },
+            //   properties: {
+            //     type: 'raised',
+            //     text: 'submit',
+            //     color: 'primary',
+            //     isVisible: true,
+            //     isEnable: true,
+            //   }
+            // },
+            properties: {
+              isVisible: true,
+              isEnable: true,
+              elements: [
+                {
+                  value: 'kanav',
+                  text: 'Kanav',
+                  // color: 'primary',
+                },
+                {
+                  value: 'Lakshit',
+                  text: 'Lakshit',
+                  // color: 'secondary',
+                },
+              ]
+            }
+          },
             {
               type: 'radio',
               properties: {
@@ -73,7 +90,7 @@ export class SchemaService {
                     // color: 'secondary',
                   },
                 ]
-              },
+              }
             },
             {
               type: 'checkbox',
