@@ -1,5 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
+import {MatPaginator} from '@angular/material/paginator';
 
 
 @Component({
@@ -9,6 +10,7 @@ import { MatTableDataSource } from '@angular/material/table';
 })
 export class TableComponent implements OnInit {
 
+  @ViewChild(MatPaginator) paginator: MatPaginator;
   constructor() { }
   @Input() data;
   dataSource;
@@ -17,11 +19,11 @@ export class TableComponent implements OnInit {
   ngOnInit(){
     console.log(this.data);
     this.dataSource = new MatTableDataSource(this.data.properties.elements);
+    this.dataSource.paginator = this.paginator;
 
     // For extracting keys from the data
     this.data.properties.elements.forEach(val=>{
       for(let key in val){
-        // console.log(keys)
         if(!this.displayedColumns.includes(key)){
           this.displayedColumns.push(key);
         }

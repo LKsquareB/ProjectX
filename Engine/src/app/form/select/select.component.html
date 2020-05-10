@@ -1,13 +1,13 @@
 <div *ngIf="data.isVisible">
-<mat-form-field>
-    <!-- mat-label to be inserted here -->
-    <mat-select>
-        <!-- mat-optgroup label=""    for grouping related options -->
-        <div *ngFor='let ele of data.elements'>
-        <mat-option value="ele.value">
-            {{ele.text}}   
-        </mat-option>
-        </div>
-    </mat-select>
-</mat-form-field>
+    <mat-form-field>
+        <!-- mat-label to be inserted here -->
+        <mat-select>
+            <!-- mat-optgroup label=""    for grouping related options -->
+            <div *ngFor='let ele of data.elements'>
+                <mat-option value="ele.value">
+                    {{ele.text}}
+                </mat-option>
+            </div>
+        </mat-select>
+    </mat-form-field>
 </div>

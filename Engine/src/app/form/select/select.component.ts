@@ -10,7 +10,7 @@ export class SelectComponent implements OnInit {
   constructor() { }
   @Input() data;
 
-  @Input() data;
+  // @Input() data;
 
   ngOnInit(): void {
     console.log(this.data);
