@@ -1,7 +1,7 @@
 <div *ngFor='let component of dataSource'>
-  <div *ngIf='component.type == "CARD"'>
+  <!-- <div *ngIf='component.type == "CARD"'>
     <app-card [data]='component'></app-card>
-  </div>
+  </div> -->
   <div *ngIf='component.type == "FORM"'>
   <app-form [data]='component'></app-form>
   </div>

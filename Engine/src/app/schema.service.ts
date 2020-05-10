@@ -132,16 +132,16 @@ export class SchemaService {
         }
 
       },
-      {
-        type: 'CARD',
-        properties: {
-          // uiProperty: {
-            width: '50%',
-            isVisible: true,
-            // isEnable: true,
-          // }
-        }
-      },
+      // {
+      //   type: 'CARD',
+      //   properties: {
+      //     // uiProperty: {
+      //       width: '50%',
+      //       isVisible: true,
+      //       // isEnable: true,
+      //     // }
+      //   }
+      // },
 
     ];
     return dataSource
