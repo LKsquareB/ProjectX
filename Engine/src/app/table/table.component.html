@@ -1,9 +1,10 @@
 <div *ngIf='data.properties.uiProperty.isVisible'>
-  <div class="mat-elevation-z8">
+  <!-- <div class="mat-elevation-z8"> -->
+    <div>
     <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
     
         <div *ngFor='let data of displayedColumns'>
-            <ng-container matColumnDef={{data | uppercase}}>
+            <ng-container matColumnDef={{data}}>
                 <th mat-header-cell *matHeaderCellDef mat-sort-header>{{data}} </th>
                 <td mat-cell *matCellDef="let element"> {{element[data]}} </td>
               </ng-container>

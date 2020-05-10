@@ -1,14 +1,13 @@
 <div *ngFor='let component of dataSource'>
-  <!-- <div *ngIf='component.type == "CARD"'>
-    <app-card [data]='component'></app-card>
-  </div> -->
   <div *ngIf='component.type == "FORM"'>
-  <app-form [data]='component'></app-form>
+    <mat-card>
+      <app-form [data]='component' ></app-form>
+    </mat-card>
   </div>
 <div *ngIf='component.type == "TABLE"'>
-  <app-table [data]='component'></app-table>
+  <mat-card>
+    <app-table [data]='component'></app-table>
+  </mat-card>
 </div>
 </div>
-<!-- <div *ngIf='dataSource.type == "TABLE"'>
-  <app-form [data]='dataSource'></app-form>
-</div> -->
+

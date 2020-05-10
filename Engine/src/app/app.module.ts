@@ -8,6 +8,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FormModule } from './form/form.module';
 import { TableModule } from './table/table.module';
+import {MatCardModule} from '@angular/material/card';
+
 
 
 @NgModule({
@@ -20,6 +22,7 @@ import { TableModule } from './table/table.module';
     BrowserAnimationsModule,
     FormModule,
     TableModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
