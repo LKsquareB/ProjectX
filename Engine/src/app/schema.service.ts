@@ -23,6 +23,7 @@ export class SchemaService {
                 type: 'text',
                 placeholder: 'Name',
                 value: 'lk2b',
+                width:'50%',
                 isVisible: true,
                 isEnable: true,
               }
@@ -48,18 +49,31 @@ export class SchemaService {
             },
             {
               type: 'select',
-              properties: {
-                type: 'raised',
-                text: 'submit',
-                color: 'primary',
-                isVisible: true,
-                isEnable: true,
-              },
+            //   properties: {
+            //     type: 'raised',
+            //     text: 'submit',
+            //     color: 'primary',
+            //     isVisible: true,
+            //     isEnable: true,
+            //   }
+            // },
+            properties: {
+              isVisible: true,
+              isEnable: true,
               elements: [
-                { name: 'Kanav' },
-                { name: 'Lakshit' },
-                { name: 'Ritika'}]
-            },
+                {
+                  value: 'kanav',
+                  text: 'Kanav',
+                  // color: 'primary',
+                },
+                {
+                  value: 'Lakshit',
+                  text: 'Lakshit',
+                  // color: 'secondary',
+                },
+              ]
+            }
+          },
             {
               type: 'radio',
               properties: {
@@ -77,7 +91,7 @@ export class SchemaService {
                     // color: 'secondary',
                   },
                 ]
-              },
+              }
             },
             {
               type: 'checkbox',
@@ -117,7 +131,22 @@ export class SchemaService {
       //     // ]
       //   }
 
+<<<<<<< HEAD
       // }
+=======
+      },
+      {
+        type: 'CARD',
+        properties: {
+          // uiProperty: {
+            width: '50%',
+            isVisible: true,
+            // isEnable: true,
+          // }
+        }
+      },
+
+>>>>>>> 90416f02501009586be1da3bf127d93ce81df045
     ];
     return dataSource
   }
