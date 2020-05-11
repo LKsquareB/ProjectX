@@ -5,11 +5,16 @@ Till 10 May
 
 Table Component
 Form Component
+
+...........
+Dynamic CSS
+add sorting Table and filtering 
+Mat label and errors 
 ______________
 Till 17 May
 
-Header and Footer
-Card Component
+Header and Footer //
+Card Component //
 Navigation / Menu Component
 Stepper
 ______________
