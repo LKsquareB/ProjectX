@@ -9,12 +9,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormModule } from './form/form.module';
 import { TableModule } from './table/table.module';
 import {MatCardModule} from '@angular/material/card';
-
+import { HeaderComponent } from './header/header.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -22,7 +26,8 @@ import {MatCardModule} from '@angular/material/card';
     BrowserAnimationsModule,
     FormModule,
     TableModule,
-    MatCardModule
+    MatCardModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
