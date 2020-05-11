@@ -1,7 +1,7 @@
 <app-header></app-header>
 <div *ngFor='let component of dataSource'>
   <div *ngIf='component.type == "FORM"'>
-    <mat-card>
+    <mat-card class="cardClass">
       <app-form [data]='component' ></app-form>
     </mat-card>
   </div>

@@ -1,6 +1,6 @@
 <div *ngIf="data.isVisible">
   <mat-form-field>
+    <mat-label>{{data.placeholder}}</mat-label>
     <input type="{{data.type}}" matInput placeholder="{{data.placeholder}}" [disabled]='!data.isEnable'>
-    {{data.value}}
   </mat-form-field>
 </div>
