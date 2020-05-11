@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 // import {MatTableDataSource } from '@angular/material/table';
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
-// import { PaginatorComponent } from './paginator/paginator.component';
+import {MatSortModule} from '@angular/material/sort';
 import { TableComponent } from './table.component';
 
 
@@ -16,7 +16,8 @@ import { TableComponent } from './table.component';
     CommonModule,
     // MatTableDataSource,
     MatTableModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatSortModule
   ],
   exports:[
     TableComponent,
