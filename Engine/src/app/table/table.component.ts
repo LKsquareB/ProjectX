@@ -19,7 +19,8 @@ export class TableComponent implements OnInit {
   ngOnInit(){
     console.log(this.data);
     this.dataSource = new MatTableDataSource(this.data.properties.elements);
-    this.dataSource.paginator = this.paginator;
+    // this.dataSource.paginator = this.paginator;
+    setTimeout(() => this.dataSource.paginator = this.paginator);
 
     // For extracting keys from the data
     this.data.properties.elements.forEach(val=>{

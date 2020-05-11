@@ -1,6 +1,6 @@
 <div *ngIf='data.properties.uiProperty.isVisible'>
   <!-- <div class="mat-elevation-z8"> -->
-    <div>
+    <div [ngStyle]="{width: '50vw'}">
     <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
     
         <div *ngFor='let data of displayedColumns'>
