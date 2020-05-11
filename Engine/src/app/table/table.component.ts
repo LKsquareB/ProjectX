@@ -36,4 +36,9 @@ export class TableComponent implements OnInit {
     console.log(this.displayedColumns); 
   }
 
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
+
 }
