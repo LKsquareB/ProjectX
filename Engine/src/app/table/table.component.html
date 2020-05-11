@@ -1,6 +1,6 @@
 <div *ngIf='data.properties.uiProperty.isVisible'>
   <!-- <div class="mat-elevation-z8"> -->
-  <div [ngStyle]="{width: '50vw'}">
+  <div [ngStyle]="{width: '50vw'}" class="mat-elevation-z8">
 
 
     <!-- <mat-form-field> -->
@@ -8,7 +8,7 @@
       <input (keyup)="applyFilter($event)" placeholder="Search">
     <!-- </mat-form-field> -->
 
-    <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource" matSort >
 
       <div *ngFor='let data of displayedColumns'>
         <ng-container matColumnDef={{data}}>
