@@ -5,10 +5,44 @@ import { element } from 'protractor';
   providedIn: 'root',
 })
 export class SchemaService {
-  constructor() {}
+  constructor() { }
 
   dataSchema() {
     let dataSource = [
+      {
+        type: 'header',
+        properties: {
+          uiProperty: {
+            // width: '50%',
+            color: 'Primary',
+            isEnable: true,
+            isVisible: true,
+            type: 'Horizontal',
+          },
+          home: {
+            routerLink: '/home',
+            routerLinkActive: 'active',
+            text: 'Project X',
+          },
+          elements: [
+            {
+              routerLink: '/home',
+              routerLinkActive: 'active',
+              text: 'Project X',
+            },
+            {
+              routerLink: '/table',
+              routerLinkActive: 'active',
+              text: 'Table',
+            },
+            {
+              routerLink: '/form',
+              routerLinkActive: 'active',
+              text: 'Form',
+            },
+          ],
+        },
+      },
       {
         type: 'FORM',
         properties: {
@@ -135,94 +169,56 @@ export class SchemaService {
         },
       },
       {
-        type:'GLOBAL',
-        properties:{
-          elements:[
+        type: 'footer',
+        properties: {
+          uiProperty: {
+            // width: '50%',
+            isVisible: true,
+            // color:'Primary',
+            // isEnable: true,
+          },
+          elements: [
             {
-              type: 'Header',
-              properties: {
-                uiProperty: {
-                  // width: '50%',
-                  color: 'Primary',
-                  isEnable: true,
-                  isVisible:true,
-                  type: 'Horizontal',
-                },
-                home:  {
-                  routerLink: '/home',
-                  routerLinkActive: 'active',
-                  text: 'Project X',
-                },
-                elements: [
-                  {
-                    routerLink: '/home',
-                    routerLinkActive: 'active',
-                    text: 'Project X',
-                  },
-                  {
-                    routerLink: '/table',
-                    routerLinkActive: 'active',
-                    text: 'Table',
-                  },
-                  {
-                    routerLink: '/form',
-                    routerLinkActive: 'active',
-                    text: 'Form',
-                  },
-                ],
-              },
+              text: 'Footer Footer dillon ka shooter',
             },
-            {
-              type: 'Footer',
-              properties: {
-                uiProperty: {
-                  // width: '50%',
-                  isVisible: true,
-                  // color:'Primary',
-                  // isEnable: true,
-                },
-                elements: [
-                  {
-                    text: 'Footer Footer dillon ka shooter',
-                  },
-                ],
-              },
-            },
-            {
-              type: 'Sidenav',
-              properties: {
-                uiProperty: {
-                  // width: '50%',
-                  // isVisible: true,
-                  color: 'Primary',
-                  isEnable: true,
-                  isVisible:true,
-                  type: 'Vertical',
-                },
-                elements: [
-                  {
-                    routerLink: '/home',
-                    routerLinkActive: 'active',
-                    text: 'Project X',
-                  },
-                  {
-                    routerLink: '/table',
-                    routerLinkActive: 'active',
-                    text: 'Table',
-                  },
-                  {
-                    routerLink: '/form',
-                    routerLinkActive: 'active',
-                    text: 'Form',
-                  },
-                ],
-              },
-            }
-          ]
-        }
+          ],
+        },
       },
+      // {
+      //   type: 'Sidenav',
+      //   properties: {
+      //     uiProperty: {
+      //       // width: '50%',
+      //       // isVisible: true,
+      //       color: 'Primary',
+      //       isEnable: true,
+      //       isVisible:true,
+      //       type: 'Vertical',
+      //     },
+      //     elements: [
+      //       {
+      //         routerLink: '/home',
+      //         routerLinkActive: 'active',
+      //         text: 'Project X',
+      //       },
+      //       {
+      //         routerLink: '/table',
+      //         routerLinkActive: 'active',
+      //         text: 'Table',
+      //       },
+      //       {
+      //         routerLink: '/form',
+      //         routerLinkActive: 'active',
+      //         text: 'Form',
+      //       },
+      //     ],
+      //   },
+      // }
+    ]
+    //   }
+    // },
 
-    ];
+    // ];
     return dataSource;
   }
 }

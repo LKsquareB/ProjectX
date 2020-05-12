@@ -10,8 +10,11 @@
       <app-table [data]="component"></app-table>
     </mat-card>
   </div>
-  <div *ngIf="component.type == 'GLOBAL'">
-    <app-global [data]="component"></app-global>
+  <div *ngIf="component.type == 'header'">
+    <app-header [data]="component"></app-header>
+  </div>
+  <div *ngIf="component.type == 'footer'">
+    <app-footer [data]="component"></app-footer>
   </div>
 </div>
 <!-- <app-footer></app-footer> -->
