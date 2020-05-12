@@ -110,8 +110,12 @@ export class SchemaService {
         type: 'TABLE',
         properties: {
           uiProperty: {
-            width: '50%',
             isVisible: true,
+            style:{
+              width: '50%',
+              height:'50%'
+              
+            }
           },
           elements: [
             { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
