@@ -1,0 +1,10 @@
+<div *ngFor='let ele of data.properties.elements'>
+    <div [ngSwitch]="ele.type">
+        <div *ngSwitchCase="'Header'">
+            <app-header [data]='ele.properties'></app-header>
+        </div>
+        <div *ngSwitchCase="'Footer'">
+            <app-footer [data]='ele.properties'></app-footer>
+        </div>
+    </div>
+</div>

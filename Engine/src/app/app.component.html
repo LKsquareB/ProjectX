@@ -1,15 +1,17 @@
-<app-header></app-header>
-<div *ngFor='let component of dataSource'>
-  <div *ngIf='component.type == "FORM"'>
+<!-- <app-header></app-header> -->
+<div *ngFor="let component of dataSource">
+  <div *ngIf="component.type == 'FORM'">
     <mat-card class="cardClass mat-elevation-z8">
-      <app-form [data]='component' ></app-form>
+      <app-form [data]="component"></app-form>
     </mat-card>
   </div>
-<div *ngIf='component.type == "TABLE"'>
-  <mat-card>
-    <app-table [data]='component'></app-table>
-  </mat-card>
+  <div *ngIf="component.type == 'TABLE'">
+    <mat-card>
+      <app-table [data]="component"></app-table>
+    </mat-card>
+  </div>
+  <div *ngIf="component.type == 'GLOBAL'">
+    <app-global [data]="component"></app-global>
+  </div>
 </div>
-</div>
-<app-footer></app-footer>
-
+<!-- <app-footer></app-footer> -->

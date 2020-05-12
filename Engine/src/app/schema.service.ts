@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
+import { element } from 'protractor';
 
 @Injectable({
   providedIn: 'root',
 })
 export class SchemaService {
-  constructor() { }
+  constructor() {}
 
   dataSchema() {
     let dataSource = [
@@ -23,10 +24,10 @@ export class SchemaService {
                 type: 'text',
                 placeholder: 'Name',
                 value: 'lk2b',
-                width:'50%',
+                width: '50%',
                 isVisible: true,
                 isEnable: true,
-              }
+              },
             },
             {
               type: 'button',
@@ -36,7 +37,7 @@ export class SchemaService {
                 color: 'primary',
                 isVisible: true,
                 isEnable: true,
-              }
+              },
             },
             {
               type: 'textarea',
@@ -45,35 +46,35 @@ export class SchemaService {
                 value: 'lk2b',
                 isVisible: true,
                 isEnable: true,
-              }
+              },
             },
             {
               type: 'select',
-            //   properties: {
-            //     type: 'raised',
-            //     text: 'submit',
-            //     color: 'primary',
-            //     isVisible: true,
-            //     isEnable: true,
-            //   }
-            // },
-            properties: {
-              isVisible: true,
-              isEnable: true,
-              elements: [
-                {
-                  value: 'kanav',
-                  text: 'Kanav',
-                  // color: 'primary',
-                },
-                {
-                  value: 'Lakshit',
-                  text: 'Lakshit',
-                  // color: 'secondary',
-                },
-              ]
-            }
-          },
+              //   properties: {
+              //     type: 'raised',
+              //     text: 'submit',
+              //     color: 'primary',
+              //     isVisible: true,
+              //     isEnable: true,
+              //   }
+              // },
+              properties: {
+                isVisible: true,
+                isEnable: true,
+                elements: [
+                  {
+                    value: 'kanav',
+                    text: 'Kanav',
+                    // color: 'primary',
+                  },
+                  {
+                    value: 'Lakshit',
+                    text: 'Lakshit',
+                    // color: 'secondary',
+                  },
+                ],
+              },
+            },
             {
               type: 'radio',
               properties: {
@@ -90,8 +91,8 @@ export class SchemaService {
                     text: 'Lakshit',
                     // color: 'secondary',
                   },
-                ]
-              }
+                ],
+              },
             },
             {
               type: 'checkbox',
@@ -100,9 +101,8 @@ export class SchemaService {
                 color: 'primary',
                 isVisible: true,
                 isEnable: true,
-              }
+              },
             },
-
           ],
         },
       },
@@ -111,11 +111,10 @@ export class SchemaService {
         properties: {
           uiProperty: {
             isVisible: true,
-            style:{
+            style: {
               width: '50%',
-              height:'50%'
-              
-            }
+              height: '50%',
+            },
           },
           elements: [
             { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
@@ -128,26 +127,102 @@ export class SchemaService {
             { position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O' },
             { position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F' },
             { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' },
-          ]
-      // //     // elements:[
-      // //     //   {name:'Kanav', sex: 'Male'},
-      // //     //   {name:'Lakshit', age:21},
-      // //     // ]
-        }
-
+          ],
+          // //     // elements:[
+          // //     //   {name:'Kanav', sex: 'Male'},
+          // //     //   {name:'Lakshit', age:21},
+          // //     // ]
+        },
       },
-      // {
-      //   type: 'CARD',
-      //   properties: {
-      //     // uiProperty: {
-      //       width: '50%',
-      //       isVisible: true,
-      //       // isEnable: true,
-      //     // }
-      //   }
-      // },
+      {
+        type:'GLOBAL',
+        properties:{
+          elements:[
+            {
+              type: 'Header',
+              properties: {
+                uiProperty: {
+                  // width: '50%',
+                  color: 'Primary',
+                  isEnable: true,
+                  isVisible:true,
+                  type: 'Horizontal',
+                },
+                home:  {
+                  routerLink: '/home',
+                  routerLinkActive: 'active',
+                  text: 'Project X',
+                },
+                elements: [
+                  {
+                    routerLink: '/home',
+                    routerLinkActive: 'active',
+                    text: 'Project X',
+                  },
+                  {
+                    routerLink: '/table',
+                    routerLinkActive: 'active',
+                    text: 'Table',
+                  },
+                  {
+                    routerLink: '/form',
+                    routerLinkActive: 'active',
+                    text: 'Form',
+                  },
+                ],
+              },
+            },
+            {
+              type: 'Footer',
+              properties: {
+                uiProperty: {
+                  // width: '50%',
+                  isVisible: true,
+                  // color:'Primary',
+                  // isEnable: true,
+                },
+                elements: [
+                  {
+                    text: 'Footer Footer dillon ka shooter',
+                  },
+                ],
+              },
+            },
+            {
+              type: 'Sidenav',
+              properties: {
+                uiProperty: {
+                  // width: '50%',
+                  // isVisible: true,
+                  color: 'Primary',
+                  isEnable: true,
+                  isVisible:true,
+                  type: 'Vertical',
+                },
+                elements: [
+                  {
+                    routerLink: '/home',
+                    routerLinkActive: 'active',
+                    text: 'Project X',
+                  },
+                  {
+                    routerLink: '/table',
+                    routerLinkActive: 'active',
+                    text: 'Table',
+                  },
+                  {
+                    routerLink: '/form',
+                    routerLinkActive: 'active',
+                    text: 'Form',
+                  },
+                ],
+              },
+            }
+          ]
+        }
+      },
 
     ];
-    return dataSource
+    return dataSource;
   }
 }
