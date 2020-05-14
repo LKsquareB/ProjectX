@@ -205,6 +205,22 @@ export class SchemaService {
         },
       },
       {
+        type: 'snackbar',
+        properties: {
+          uiProperty: {
+            // width: '50%',
+            isVisible: true,
+            // color:'Primary',
+            isEnable: true,
+          },
+          elements: [
+            {
+              message: 'chaliye shuru karte hain',
+            },
+          ],
+        },
+      },
+      {
         type: 'footer',
         properties: {
           uiProperty: {
