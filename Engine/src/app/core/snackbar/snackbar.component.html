@@ -1,7 +1,7 @@
 <!-- <p>snackbar works!</p> -->
 <div *ngIf='data.uiProperty.isVisible'>
-    <mat-form-field>  
+    <!-- <mat-form-field>   -->
       <!-- <button mat-stroked-button (click)="openSnackBar(message.value, action.value)">Show snack-bar</button> -->
-      <button mat-stroked-button (click)="openSnackBar(data.elements[0].message,'close')">Show snack-bar</button>
-    </mat-form-field>
+      <button  (click)="openSnackBar(data.elements[0].message,'close')">Show snack-bar</button>
+    <!-- </mat-form-field> -->
 </div>
