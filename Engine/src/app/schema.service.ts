@@ -47,9 +47,12 @@ export class SchemaService {
         type: 'FORM',
         properties: {
           uiProperty: {
-            width: '50%',
             isVisible: true,
             isEnable: true,
+            style:{
+              width: '50%',
+              
+            }
           },
           elements: [
             {
