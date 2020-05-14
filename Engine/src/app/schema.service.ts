@@ -16,8 +16,44 @@ export class SchemaService {
             // width: '50%',
             color: 'Primary',
             isEnable: true,
-            isVisible: true,
+            // isVisible: true,
+            isVisible:false,
             type: 'Horizontal',
+          },
+          home: {
+            routerLink: '/home',
+            routerLinkActive: 'active',
+            text: 'Project X',
+          },
+          elements: [
+            {
+              routerLink: '/home',
+              routerLinkActive: 'active',
+              text: 'Project X',
+            },
+            {
+              routerLink: '/table',
+              routerLinkActive: 'active',
+              text: 'Table',
+            },
+            {
+              routerLink: '/form',
+              routerLinkActive: 'active',
+              text: 'Form',
+            },
+          ],
+        },
+      },
+      {
+        type: 'sidenav',
+        properties: {
+          uiProperty: {
+            // width: '50%',
+            // isVisible: true,
+            // color: 'Primary',
+            isEnable: true,
+            isVisible:true,
+            type: 'Vertical',
           },
           home: {
             routerLink: '/home',
@@ -172,6 +208,22 @@ export class SchemaService {
         },
       },
       {
+        type: 'snackbar',
+        properties: {
+          uiProperty: {
+            // width: '50%',
+            isVisible: true,
+            // color:'Primary',
+            isEnable: true,
+          },
+          elements: [
+            {
+              message: 'chaliye shuru karte hain',
+            },
+          ],
+        },
+      },
+      {
         type: 'footer',
         properties: {
           uiProperty: {
@@ -187,36 +239,7 @@ export class SchemaService {
           ],
         },
       },
-      // {
-      //   type: 'Sidenav',
-      //   properties: {
-      //     uiProperty: {
-      //       // width: '50%',
-      //       // isVisible: true,
-      //       color: 'Primary',
-      //       isEnable: true,
-      //       isVisible:true,
-      //       type: 'Vertical',
-      //     },
-      //     elements: [
-      //       {
-      //         routerLink: '/home',
-      //         routerLinkActive: 'active',
-      //         text: 'Project X',
-      //       },
-      //       {
-      //         routerLink: '/table',
-      //         routerLinkActive: 'active',
-      //         text: 'Table',
-      //       },
-      //       {
-      //         routerLink: '/form',
-      //         routerLinkActive: 'active',
-      //         text: 'Form',
-      //       },
-      //     ],
-      //   },
-      // }
+      
     ]
     //   }
     // },

@@ -11,10 +11,21 @@
     </mat-card>
   </div>
   <div *ngIf="component.type == 'header'">
-    <app-header [data]="component.properties"></app-header>
+    <div *ngIf="component.properties.uiProperty.type == 'Horizontal'">
+      <app-header [data]="component.properties"></app-header>
+    </div>
+  </div>
+  <div *ngIf="component.type == 'sidenav'">
+    <div *ngIf="component.properties.uiProperty.type == 'Vertical'">
+      <app-sidenav [data]="component.properties"></app-sidenav>
+    </div>
   </div>
   <div *ngIf="component.type == 'footer'">
     <app-footer [data]="component.properties"></app-footer>
   </div>
+  <div *ngIf="component.type == 'snackbar'">
+    <app-snackbar [data]="component.properties"></app-snackbar>
+  </div>
 </div>
+<!-- <app-snackbar></app-snackbar> -->
 <!-- <app-footer></app-footer> -->

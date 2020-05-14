@@ -11,6 +11,7 @@ import {MatCardModule} from '@angular/material/card';
 // import { HeaderComponent } from './header/header.component';
 // import {MatToolbarModule} from '@angular/material/toolbar';
 import { GlobalModule } from './global/global.module';
+import { CoreModule } from './core/core.module';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { GlobalModule } from './global/global.module';
     TableModule,
     GlobalModule,
     MatCardModule,
+    CoreModule
     // MatToolbarModule
   ],
   providers: [],
