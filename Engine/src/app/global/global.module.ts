@@ -6,7 +6,12 @@ import { FooterComponent } from './footer/footer.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { FormsModule } from '@angular/forms';
+import {MatIconModule} from '@angular/material/icon';
+
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+
 
 
 
@@ -20,7 +25,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
   ],
   imports: [
     CommonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatSidenavModule,
+    FormsModule,
+    MatIconModule
   ],
   exports:[
     GlobalComponent, 

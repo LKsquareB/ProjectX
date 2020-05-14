@@ -1,1 +1,16 @@
-<p>sidenav works!</p>
+<div *ngIf='data.uiProperty.isVisible'>
+    <mat-sidenav-container>
+        <mat-sidenav #sidenav mode="side">
+            <div *ngFor='let ele of data.elements'>
+                {{ele.text}}
+            </div>
+        </mat-sidenav>
+            <mat-sidenav-content> 
+                {{data.home.text}}
+                <button (click)="sidenav.toggle()">
+                    <mat-icon>menu</mat-icon>
+                </button>
+            </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>
+<!-- <h1>Sidenav</h1> -->
