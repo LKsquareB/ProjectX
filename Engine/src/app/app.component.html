@@ -2,7 +2,7 @@
 <div *ngFor="let component of dataSource">
   <div *ngIf="component.type == 'FORM'">
     <mat-card class="cardClass mat-elevation-z8">
-      <app-form [data]="component"></app-form>
+      <app-form [data]="component.properties"></app-form>
     </mat-card>
   </div>
   <div *ngIf="component.type == 'TABLE'">
@@ -26,6 +26,10 @@
   <div *ngIf="component.type == 'snackbar'">
     <app-snackbar [data]="component.properties"></app-snackbar>
   </div>
+  <div *ngIf="component.type == 'STEPPER'">
+    <app-stepper [data]="component.properties"></app-stepper>
+  </div>
+
 </div>
 <!-- <app-snackbar></app-snackbar> -->
 <!-- <app-footer></app-footer> -->

@@ -8,6 +8,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatStepperModule} from '@angular/material/stepper';
 // import{MatNativeDateModule} from '@angular/material';
 
 import { FormComponent } from './form.component';
@@ -19,6 +20,7 @@ import { SelectComponent } from './select/select.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { MatNativeDateModule } from '@angular/material/core';
 import { TextareaComponent } from './textarea/textarea.component';
+import { StepperComponent } from './stepper/stepper.component';
 
 
 @NgModule({
@@ -30,7 +32,8 @@ import { TextareaComponent } from './textarea/textarea.component';
     RadiobuttonComponent,
     SelectComponent,
     DatepickerComponent,
-    TextareaComponent
+    TextareaComponent,
+    StepperComponent
   ],
   imports: [
     CommonModule,
@@ -41,7 +44,8 @@ import { TextareaComponent } from './textarea/textarea.component';
     MatRadioModule,
     MatSelectModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatStepperModule
   ],
   exports: [
     FormComponent,
@@ -51,7 +55,8 @@ import { TextareaComponent } from './textarea/textarea.component';
     RadiobuttonComponent,
     SelectComponent,
     DatepickerComponent,
-    TextareaComponent
+    TextareaComponent,
+    StepperComponent
   ]
 })
 export class FormModule { }

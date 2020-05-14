@@ -17,6 +17,10 @@ export class SchemaService {
             color: 'Primary',
             isEnable: true,
             // isVisible: true,
+            // snackbar:{
+            //   condition:"",
+            //   text:"",
+            // },
             isVisible:false,
             type: 'Horizontal',
           },
@@ -221,6 +225,107 @@ export class SchemaService {
               message: 'chaliye shuru karte hain',
             },
           ],
+        },
+      },
+      {
+        type: 'STEPPER',
+        properties: {
+          uiProperty: {
+            isVisible: true,
+            isEnable: true,
+            type:'horizontal',
+            linear:true,
+            style:{
+              width: '50%',
+            }
+          },
+          steps:[
+            {heading: 'Step 1',elements:[
+              {
+                type: 'input',
+                properties: {
+                  type: 'text',
+                  placeholder: 'Name',
+                  value: 'lk2b',
+                  width: '50%',
+                  isVisible: true,
+                  isEnable: true,
+                },
+              },{
+                type: 'input',
+                properties: {
+                  type: 'text',
+                  placeholder: 'Name',
+                  value: 'lk2b',
+                  width: '50%',
+                  isVisible: true,
+                  isEnable: true,
+                },
+              },
+            ] },
+            {heading: 'Step 2',elements:[
+              {
+                type: 'textarea',
+                properties: {
+                  placeholder: 'Address',
+                  value: 'lk2b',
+                  isVisible: true,
+                  isEnable: true,
+                },
+              },
+              {
+                type: 'select',
+                properties: {
+                  isVisible: true,
+                  isEnable: true,
+                  elements: [
+                    {
+                      value: 'kanav',
+                      text: 'Kanav',
+                      // color: 'primary',
+                    },
+                    {
+                      value: 'Lakshit',
+                      text: 'Lakshit',
+                      // color: 'secondary',
+                    },
+                  ],
+                },
+              },
+
+            ] },
+            {heading: 'Step 3',elements:[
+              {
+                type: 'radio',
+                properties: {
+                  isVisible: true,
+                  isEnable: true,
+                  elements: [
+                    {
+                      value: 'kanav',
+                      text: 'Kanav',
+                      // color: 'primary',
+                    },
+                    {
+                      value: 'Lakshit',
+                      text: 'Lakshit',
+                      // color: 'secondary',
+                    },
+                  ],
+                },
+              },
+              {
+                type: 'checkbox',
+                properties: {
+                  text: 'submit',
+                  color: 'primary',
+                  isVisible: true,
+                  isEnable: true,
+                },
+              },
+            ] },
+            
+          ]
         },
       },
       {
