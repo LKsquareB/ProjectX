@@ -29,6 +29,9 @@
   <div *ngIf="component.type == 'STEPPER'">
     <app-stepper [data]="component.properties"></app-stepper>
   </div>
+  <div *ngIf="component.type == 'DIALOG'">
+    <app-dialog-window [data]="component.properties"></app-dialog-window>
+  </div>
 
 </div>
 <!-- <app-snackbar></app-snackbar> -->

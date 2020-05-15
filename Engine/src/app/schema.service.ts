@@ -329,6 +329,42 @@ export class SchemaService {
         },
       },
       {
+        type: 'DIALOG',
+        properties: {
+          uiProperty: {
+            isVisible: true,
+            isEnable: true,
+            style:{
+              width: '50%',
+            }
+          },
+          elements:[
+              {
+                type: 'input',
+                properties: {
+                  type: 'text',
+                  placeholder: 'Name',
+                  value: 'lk2b',
+                  width: '50%',
+                  isVisible: true,
+                  isEnable: true,
+                },
+              },
+              {
+                type: 'input',
+                properties: {
+                  type: 'text',
+                  placeholder: 'Name',
+                  value: 'lk2b',
+                  width: '50%',
+                  isVisible: true,
+                  isEnable: true,
+                },
+              },
+          ]
+        },
+      },
+      {
         type: 'footer',
         properties: {
           uiProperty: {

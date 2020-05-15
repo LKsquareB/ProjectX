@@ -21,6 +21,7 @@ import { DatepickerComponent } from './datepicker/datepicker.component';
 import { MatNativeDateModule } from '@angular/material/core';
 import { TextareaComponent } from './textarea/textarea.component';
 import { StepperComponent } from './stepper/stepper.component';
+import { DialogComponent } from './dialog/dialog.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { StepperComponent } from './stepper/stepper.component';
     SelectComponent,
     DatepickerComponent,
     TextareaComponent,
-    StepperComponent
+    StepperComponent,
+    DialogComponent
   ],
   imports: [
     CommonModule,
@@ -56,7 +58,8 @@ import { StepperComponent } from './stepper/stepper.component';
     SelectComponent,
     DatepickerComponent,
     TextareaComponent,
-    StepperComponent
+    StepperComponent,
+    DialogComponent
   ]
 })
 export class FormModule { }
