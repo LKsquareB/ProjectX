@@ -1,12 +1,12 @@
 <div *ngIf='data.uiProperty.isVisible'>
     <div *ngIf='data.uiProperty.type === "horizontal"'>
         <mat-horizontal-stepper [linear]=data.uiProperty.linear #stepper>
-            <div *ngFor="let d of data.steps">
+            <div *ngFor="let d of data.steps;let i=index">
                 <mat-step label={{d.heading}}>
                     <app-form [data]="d"></app-form>
                     <div>
-                        <button mat-button matStepperPrevious>Back</button>
-                        <button mat-button matStepperNext>Next</button>
+                        <button *ngIf='i!=0' mat-button matStepperPrevious>Back</button>
+                        <button *ngIf='i!=(data.steps.length-1)' mat-button matStepperNext>Next</button>
                     </div>
                 </mat-step>
             </div>
