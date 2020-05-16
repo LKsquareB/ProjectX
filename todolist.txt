@@ -16,13 +16,13 @@ Till 17 May
 Header and Footer //
 Card Component //
 Navigation / Menu Component
-Stepper
+Stepper //
 ______________
 Till 23 May
 
-Dialog Box and snackbar
+Dialog Box and snackbar //
 Page Implementation
-Sidenav
+Sidenav //
 Math.js --> For logic
 _______________
 Till 30 May
